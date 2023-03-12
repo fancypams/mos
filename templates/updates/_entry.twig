@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ siteUrl }}/resources/styles.css">
+    <div class="content">
+        {% for entry in craft.entries.section('updates') %}
+            <h2>{{ entry.title }}</h2>
+            <div class="post-meta">
+                {{ entry.displayDate|date('M j, Y') }}
+            </div>
+            <div class="entry-content">
+                {{ entry.entry }}
+            </div>
+            <div class="signature">
+                <p>cheers,</p>
+                <p class="name">
+                {{ entry.signature }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>

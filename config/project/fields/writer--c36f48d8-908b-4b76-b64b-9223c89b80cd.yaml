@@ -1,0 +1,33 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 261fcf20-0012-4add-b92a-93b20d10ab50 # Common
+handle: writer
+instructions: null
+name: Writer
+searchable: false
+settings:
+  allowSelfRelations: false
+  localizeRelations: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\User
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\users\UserCondition
+  selectionLabel: null
+  showSiteMenu: true
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Users

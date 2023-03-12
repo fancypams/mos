@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: updates
+name: Updates
+propagationMethod: all
+siteSettings:
+  c92ba992-cb54-4dfb-ae65-66757f29798b: # MO'S
+    enabledByDefault: true
+    hasUrls: true
+    template: updates/_entry
+    uriFormat: 'updates/{slug}'
+type: channel

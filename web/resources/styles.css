@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mynerve&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Tilt+Neon&display=swap');
+
+body {
+    background-color: #faf8e8;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    min-height: 100vh;
+}
+.content {
+    margin: 0 25px;
+}
+.slogan {
+    font-family: 'Mynerve', cursive;
+    font-size: 35px;
+    transform: rotate(351deg);
+    margin-left: -25px;
+    margin-bottom: -35px;
+}
+.site-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    font-family: 'Anton', san-serif;
+    font-size: 208px;
+}
+.star {
+    font-size: 55px;
+}
+h2 {
+    font-family: 'Mynerve', cursive;
+}
+.entry-content {
+    max-width: 700px;
+}
+.post-meta {
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+.signature {
+    font-family: 'Mynerve', cursive;
+    text-align: center;
+    padding-left: 325px;
+    font-size: 20px;
+    transform: rotate(2deg);
+}
+.name {
+    margin-top: -25px;
+}
+.cocktail-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+.cocktail {
+    transform: rotate(-5deg);
+    width: 150px;
+    z-index: -5;
+    margin-top: -95px;
+    margin-left: -25px;
+}
+.pour {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(5deg);
+    width: 272px;
+    z-index: -5;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    .star {
+        font-size: 35px;
+    }
+    .logo {
+        font-size: 128px;
+    }
+    .slogan {
+        margin-bottom: -28px;
+        margin-left: -2px;
+        font-size: 25px;
+        transform: rotate(353deg);
+    }
+    .cocktail {
+        padding-left: 0;
+        width: 100px;
+    }
+    .content {
+        width: 300px;
+    }
+    .pour {
+        width: 175px;
+        padding-top: 78px;
+    }
+    .signature {
+        padding-left: 100px;
+    }
+}

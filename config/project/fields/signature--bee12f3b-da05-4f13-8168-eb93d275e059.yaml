@@ -1,0 +1,19 @@
+columnSuffix: jwbfvdty
+contentColumnType: text
+fieldGroup: 261fcf20-0012-4add-b92a-93b20d10ab50 # Common
+handle: signature
+instructions: null
+name: Signature
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

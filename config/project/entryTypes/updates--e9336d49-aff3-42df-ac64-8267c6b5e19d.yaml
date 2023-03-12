@@ -1,0 +1,89 @@
+fieldLayouts:
+  ebb1b207-a913-4dd6-b0a2-d9f1d0fcaf02:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ae268b5e-3ede-479f-971a-500593fc498d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 858e8cca-7ed7-4e5b-87a0-da25e66518f5
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 300ffcc4-0e22-44f0-b41b-f8bd0c279a8b # Display Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f9fb799-f615-4b20-b85c-85fe312a73ae
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 0b6d2f7a-0492-42a6-a062-d8348549cbdd
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: c990a4f1-24e2-4d37-a050-f36e857917f0 # Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41b0b840-1ccf-4afa-bba0-6b70045584cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bee12f3b-da05-4f13-8168-eb93d275e059 # Signature
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9959d34a-6985-43b4-862f-b1406f18608a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5eee63d0-3498-420a-8827-5aec9e0c52c3
+        userCondition: null
+handle: updates
+hasTitleField: true
+name: Updates
+section: 50908657-7579-47f7-8187-6d789401aa3c # Updates
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
