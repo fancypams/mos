@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <title>Welcome to {{ siteName }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="referrer" content="origin-when-cross-origin" />
-    <link rel="stylesheet" href="https://mos.pamelamontanez.com/web/resources/styles.css">
-    <link rel="icon" type="image/x-icon" href="https://mos.pamelamontanez.com/web/resources/img/favicon.ico">
-</head>
+{% include 'partials/_head.twig' %}
+<body>
+    {% include 'partials/_navbar.twig' %}
+    {% include 'partials/_header.twig' %}
 
-<body class="ltr">
-    <header>
-        <div class="slogan">Drink at</div>
-        <div class="site-name">
-            <span class="star">★</span>
-            <span class="logo">{{ siteName }}</span>
-            <span class="star">★</span>
-        </div>
-    </header>
-    <img src="https://mos.pamelamontanez.com/web/resources/img/pour.png" class="pour">
+    <img src="/resources/img/pour.png" class="pour">
     <div class="content">
-        {% for entry in craft.entries.section('updates').limit(15).all() %}
-            <h2>{{ entry.title }}</h2>
-            <div class="post-meta">
-                Posted on {{ entry.displayDate|date('M j, Y') }}
-            </div>
-            <div class="entry-content">
-                {{ entry.entry }}
-            </div>
-            <div class="signature">
-                <p>cheers,</p>
-                <p class="name">
-                {{ entry.signature }}
-                </p>
-            </div>
-        {% endfor %}
+        <div class="latest-update">
+            {% for entry in craft.entries.section('updates').limit(1) %}
+                <h2>{{ entry.title }}</h2>
+                <div class="post-meta">
+                    Posted on {{ entry.displayDate|date('M j, Y') }}
+                </div>
+                <div class="entry-content">
+                    {{ entry.entry }}
+                </div>
+                <div class="signature">
+                    <p>cheers,</p>
+                    <p class="name">
+                    {{ entry.signature }}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="drink-feature">
+            {% for entry in craft.entries.section('drinkOfTheMonth').limit(1) %}
+                <a href="/drink-of-the-month/{{ entry.slug }}" target="_blank">
+                    {# <img class="drink-image" src="{{ entry.image.one().url }}"> #}
+                    <h3>{{ entry.title }}</h3>
+                    <div class="drink-info">
+                        <div class="drink-promo">
+                            {{ entry.drinkPromo }}
+                        </div>
+                        <div class="drink-recipe">
+                            {{ entry.recipe }}
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
     </div>
     <div class="cocktail-wrapper">
         <img src="https://mos.pamelamontanez.com/web/resources/img/cocktail.png" class="cocktail">

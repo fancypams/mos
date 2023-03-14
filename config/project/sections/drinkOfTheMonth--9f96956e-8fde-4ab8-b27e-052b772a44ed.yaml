@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: drinkOfTheMonth
+name: 'Drink of the Month'
+propagationMethod: all
+siteSettings:
+  c92ba992-cb54-4dfb-ae65-66757f29798b: # MO'S
+    enabledByDefault: true
+    hasUrls: true
+    template: updates/_drink-entry.twig
+    uriFormat: 'drink-of-the-month/{slug}'
+type: channel

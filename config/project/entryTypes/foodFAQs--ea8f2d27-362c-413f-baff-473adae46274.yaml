@@ -1,0 +1,55 @@
+fieldLayouts:
+  1757145c-7b5c-434e-94e4-ceb492700ba0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 394ad925-a196-41b2-b140-5b8020b33f76
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c990a4f1-24e2-4d37-a050-f36e857917f0 # Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 153601d3-7918-4a4f-aa2c-619ecd3c5bd5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 516bbd48-ea23-4312-8a0d-298e6352343c
+        userCondition: null
+handle: foodFAQs
+hasTitleField: true
+name: 'Food FAQs'
+section: 9fc5ad5f-f249-45a7-ae56-102acbb4b69f # Food FAQs
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

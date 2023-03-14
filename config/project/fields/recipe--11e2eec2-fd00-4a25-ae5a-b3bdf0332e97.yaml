@@ -1,0 +1,28 @@
+columnSuffix: twhdnszp
+contentColumnType: text
+fieldGroup: 261fcf20-0012-4add-b92a-93b20d10ab50 # Common
+handle: recipe
+instructions: null
+name: Recipe
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes:
+    - b1947b9f-bbb6-4312-92ca-cf2c8a503538 # Uploads Volume
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

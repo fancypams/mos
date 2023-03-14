@@ -8,6 +8,32 @@ body {
     align-items: center;
     flex-direction:column;
     min-height: 100vh;
+    max-width: 700px;
+    justify-content: flex-start;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: initial;
+}
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    font-size: 12px;
+    width: fit-content;
+    margin-left: 400px;
+    z-index: 5;
+}
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: #cc0000;
+    cursor: pointer;
 }
 .content {
     margin: 0 25px;
@@ -18,11 +44,13 @@ body {
     transform: rotate(351deg);
     margin-left: -25px;
     margin-bottom: -35px;
+    color: #cc0000;
 }
 .site-name {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: black;
 }
 .logo {
     font-family: 'Anton', san-serif;
@@ -35,7 +63,7 @@ h2 {
     font-family: 'Mynerve', cursive;
 }
 .entry-content {
-    max-width: 700px;
+    max-width: 750px;
 }
 .post-meta {
     font-size: 10px;
@@ -45,9 +73,10 @@ h2 {
 .signature {
     font-family: 'Mynerve', cursive;
     text-align: center;
-    padding-left: 325px;
+    padding-left: 435px;
     font-size: 20px;
     transform: rotate(2deg);
+    color: #cc0000;
 }
 .name {
     margin-top: -25px;
@@ -56,6 +85,7 @@ h2 {
     display: flex;
     width: 100%;
     justify-content: left;
+    margin-left: -350px;
 }
 .cocktail {
     transform: rotate(-5deg);
@@ -72,10 +102,45 @@ h2 {
     width: 272px;
     z-index: -5;
 }
+.drink-image {
+    width: 100%;
+}
+.drink-feature {
+    padding: 20px;
+    background-image: url('/resources/img/background.png');
+    background-size: 100% 100%;
+    max-width: 700px;
+    height: 380px;
+}
+.drink-feature h3 {
+    margin: 0;
+    padding: 20px;
+    color: #cc0000;
+}
+.drink-info {
+    display: flex;
+}
+.drink-feature a {
+    text-decoration: none;
+    color: black;
+}
+.drink-promo {
+    font-family: 'Mynerve', cursive;
+    flex-shrink: 1;
+    padding: 15px 20px;
+    width: 300px;
+}
+.drink-recipe {
+    border-left: black solid 1px;
+    padding: 0 20px;
+}
 
 @media only screen and (max-width: 500px) {
     body {
         overflow-x: hidden;
+    }
+    .navbar {
+        margin-left: 250px;
     }
     .star {
         font-size: 35px;
@@ -93,6 +158,9 @@ h2 {
         padding-left: 0;
         width: 100px;
     }
+    .cocktail-wrapper {
+        margin: 0;
+    }
     .content {
         width: 300px;
     }
@@ -102,5 +170,20 @@ h2 {
     }
     .signature {
         padding-left: 100px;
+    }
+    .drink-feature{
+        background-image: url('/resources/img/background-mobile.png');
+        background-size: 100% 100%;
+        height: fit-content;
+    }
+    .drink-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .drink-promo {
+        width: 241px;
+    }
+    .drink-recipe {
+        border-left: 0;
     }
 }

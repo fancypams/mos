@@ -1,0 +1,79 @@
+fieldLayouts:
+  e4ef60d8-5a82-4e26-8825-b3a4116055f6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3ad42f83-5793-4a3b-8bc7-57738a10568b # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f906b894-5dfe-4b7f-b3b9-6e7a84a24881
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9eb41ca9-8c71-418a-8ffe-c12c67213028
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c8fef32-5b58-4755-adc7-3f88a3e21fa7 # Drink Promo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70ea632e-6aa4-448a-a865-61d487394470
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 11e2eec2-fd00-4a25-ae5a-b3bdf0332e97 # Recipe
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af708198-8333-4066-939f-70d68cef15d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b2e2c18c-6642-4a64-91f1-cee00aecbe76
+        userCondition: null
+handle: drink
+hasTitleField: true
+name: Drink
+section: 9f96956e-8fde-4ab8-b27e-052b772a44ed # Drink of the Month
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

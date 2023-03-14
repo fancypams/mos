@@ -1,0 +1,15 @@
+{% include 'partials/_head.twig' %}
+<body>
+    {% include 'partials/_navbar.twig' %}
+    {% include 'partials/_header.twig' %}
+
+    <div class="content">
+        {% for entry in craft.entries.section('foodFAQs').all() %}
+            <h2>{{ entry.title }}</h2>
+            <div class="entry-content">
+                {{ entry.entry }}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+ 

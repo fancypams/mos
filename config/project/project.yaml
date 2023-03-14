@@ -1,24 +1,46 @@
-dateModified: 1677818117
+dateModified: 1678752196
 email:
   fromEmail: pamrmont@gmail.com
   fromName: MOS
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@web/resources/uploads'
+    type: craft\fs\Local
+    url: '@web/resources/uploads/'
 meta:
   __names__:
+    0c8fef32-5b58-4755-adc7-3f88a3e21fa7: 'Drink Promo' # Drink Promo
+    3ad42f83-5793-4a3b-8bc7-57738a10568b: Image # Image
+    9f96956e-8fde-4ab8-b27e-052b772a44ed: 'Drink of the Month' # Drink of the Month
+    9fc5ad5f-f249-45a7-ae56-102acbb4b69f: 'Food FAQs' # Food FAQs
+    11e2eec2-fd00-4a25-ae5a-b3bdf0332e97: Recipe # Recipe
     261fcf20-0012-4add-b92a-93b20d10ab50: Common # Common
     300ffcc4-0e22-44f0-b41b-f8bd0c279a8b: 'Display Date' # Display Date
+    68642de9-1214-4d0c-bac7-15ae9a1a55d8: Drink # Drink
     97210d52-cb67-43bd-bc5c-448c16038204: MOS # MOS
     50908657-7579-47f7-8187-6d789401aa3c: Updates # Updates
+    b1947b9f-bbb6-4312-92ca-cf2c8a503538: 'Uploads Volume' # Uploads Volume
     bee12f3b-da05-4f13-8168-eb93d275e059: Signature # Signature
     c36f48d8-908b-4b76-b64b-9223c89b80cd: Writer # Writer
     c92ba992-cb54-4dfb-ae65-66757f29798b: 'MO''S' # MO'S
     c990a4f1-24e2-4d37-a050-f36e857917f0: Entry # Entry
     e9336d49-aff3-42df-ac64-8267c6b5e19d: Updates # Updates
+    ea8f2d27-362c-413f-baff-473adae46274: 'Food FAQs' # Food FAQs
+    f2cac5ee-9c9c-4989-abcf-165189767e08: Month # Month
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true
   name: MOS
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

@@ -1,0 +1,19 @@
+columnSuffix: tihfbxhf
+contentColumnType: text
+fieldGroup: 261fcf20-0012-4add-b92a-93b20d10ab50 # Common
+handle: drinkPromo
+instructions: 'How would you describe this drink?'
+name: 'Drink Promo'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

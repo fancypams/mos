@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/resources/styles.css">
+<div class="content">
+    {% for entry in craft.entries.section('drinkOfTheMonth').all() %}
+        <img class="drink-image" src="{{ entry.image.one().url }}">
+        <h2>{{ entry.title }}</h2>
+        <div class="entry-content">
+            {{ entry.drinkPromo }}
+        </div>
+        <div class="drink-recipe">
+            {{ entry.recipe }}
+        </div>
+    {% endfor %}
+</div>
+ 
