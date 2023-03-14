@@ -24,6 +24,11 @@
             {% endfor %}
         </div>
 
+        <div class="drink-label">
+            <img src="/resources/img/down-arrow-2.png" class="arrow">
+            <h2>Drink of the Month</h2>
+        </div>
+
         <div class="drink-feature">
             {% for entry in craft.entries.section('drinkOfTheMonth').limit(1) %}
                 <a href="/drink-of-the-month/{{ entry.slug }}" target="_blank">

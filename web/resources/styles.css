@@ -32,7 +32,7 @@ a:visited {
     color: white;
 }
 .navbar a:hover {
-    color: #cc0000;
+    color: white;
     cursor: pointer;
 }
 .content {
@@ -44,7 +44,7 @@ a:visited {
     transform: rotate(351deg);
     margin-left: -25px;
     margin-bottom: -35px;
-    color: #cc0000;
+    color: black;
 }
 .site-name {
     display: flex;
@@ -76,26 +76,34 @@ h2 {
     padding-left: 435px;
     font-size: 20px;
     transform: rotate(2deg);
-    color: #cc0000;
+    color: black;
+    margin: -15px 0 35px 0;
 }
 .name {
     margin-top: -25px;
 }
-.cocktail-wrapper {
+.drink-label {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arrow {
+    width: 25px;
+}
+.cocktail-wrapper {
+    position: fixed;
     width: 100%;
-    justify-content: left;
-    margin-left: -350px;
+    left: 0;
+    bottom: -45px;
 }
 .cocktail {
     transform: rotate(-5deg);
-    width: 150px;
+    width: 180px;
     z-index: -5;
-    margin-top: -95px;
-    margin-left: -25px;
 }
 .pour {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     transform: rotate(5deg);
@@ -105,17 +113,23 @@ h2 {
 .drink-image {
     width: 100%;
 }
+.drink-of-the-month {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
 .drink-feature {
     padding: 20px;
     background-image: url('/resources/img/background.png');
     background-size: 100% 100%;
     max-width: 700px;
     height: 380px;
+    margin-bottom: 50px;
 }
 .drink-feature h3 {
     margin: 0;
     padding: 20px;
-    color: #cc0000;
+    color: black;
 }
 .drink-info {
     display: flex;
@@ -133,6 +147,7 @@ h2 {
 .drink-recipe {
     border-left: black solid 1px;
     padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -160,6 +175,8 @@ h2 {
     }
     .cocktail-wrapper {
         margin: 0;
+        position: fixed;
+        z-index: -5;
     }
     .content {
         width: 300px;
